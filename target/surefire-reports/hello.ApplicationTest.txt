@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: hello.ApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.781 s <<< FAILURE! - in hello.ApplicationTest
+homePage(hello.ApplicationTest)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultValidator' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.hibernate.validator.internal.engine.valueextraction.ValueExtractorManager
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.hibernate.validator.internal.engine.valueextraction.ValueExtractorManager
+
+greetingWithUser(hello.ApplicationTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultValidator' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.hibernate.validator.internal.engine.valueextraction.ValueExtractorManager
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.hibernate.validator.internal.engine.valueextraction.ValueExtractorManager
+
+greeting(hello.ApplicationTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultValidator' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.hibernate.validator.internal.engine.valueextraction.ValueExtractorManager
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.hibernate.validator.internal.engine.valueextraction.ValueExtractorManager
+
